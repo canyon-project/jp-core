@@ -1,0 +1,33 @@
+# Source files
+src/
+tests/
+*.test.ts
+*.test.js
+
+# Config files
+tsconfig.json
+rstest.config.ts
+biome.json
+.editorconfig
+.gitignore
+.git/
+
+# Development files
+node_modules/
+.github/
+pnpm-lock.yaml
+
+# Build artifacts (keep dist/)
+*.tsbuildinfo
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Other
+.DS_Store
+coverage/
+.cache/

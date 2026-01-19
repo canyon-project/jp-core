@@ -2,13 +2,20 @@
   "name": "jp-core",
   "version": "1.0.0",
   "description": "日语学习工具库",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "bin": {
-    "jp": "./src/cli.ts"
+    "jp": "./dist/cli.js"
   },
   "scripts": {
+    "build": "tsc",
     "test": "rstest",
-    "cli": "tsx src/cli.ts"
+    "cli": "tsx src/cli.ts",
+    "prepublishOnly": "pnpm build"
   },
   "keywords": ["japanese", "language", "learning"],
   "author": "",
@@ -19,6 +26,7 @@
     "@rstest/core": "^0.7.9",
     "@rstest/coverage-istanbul": "^0.1.6",
     "tsx": "^4.7.0",
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
   }
 }

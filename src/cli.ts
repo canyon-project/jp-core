@@ -260,6 +260,7 @@ function main() {
   });
 }
 
+// 检查是否直接运行此文件
 if (require.main === module) {
   main();
 }
